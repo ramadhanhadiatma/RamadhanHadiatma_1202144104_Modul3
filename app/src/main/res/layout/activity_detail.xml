@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hadiatma.ramadhan.ramadhanhadiatama_1202144104_modul3.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/waterImageDetail"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTextDetail"
+            android:text="@string/title_placeholder"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/waterImageDetail"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            style="@style/WaterTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subTitleDetail"
+            android:text="@string/filler_text"
+            android:layout_below="@+id/titleTextDetail"
+            style="@style/WaterDetailText"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/img_photo"
+            android:layout_marginTop="10dp"
+            android:id="@+id/botol1"
+            android:layout_below="@+id/subTitleDetail"/>
+
+        <ImageButton
+            android:id="@+id/decreaseTeam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_minus"
+            android:layout_below="@+id/botol1"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/minus_button"/>
+
+        <TextView
+            android:id="@+id/score_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/botol1"
+            android:layout_marginTop="10dp"
+            android:text="@string/initial_count"/>
+
+        <ImageButton
+            android:id="@+id/increaseTeam1"
+            android:layout_below="@+id/botol1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/plus_button"
+            android:src="@drawable/ic_plus" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>

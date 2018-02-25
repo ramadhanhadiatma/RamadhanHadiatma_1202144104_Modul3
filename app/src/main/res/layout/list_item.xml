@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/waterImage"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleText"
+            android:text="@string/title_placeholder"
+            android:padding="8dp"
+            android:layout_alignBottom="@+id/waterImage"
+            android:textColor="@color/hitam"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subTitleText"
+            android:text="@string/isi_placeholder"
+            android:padding="8dp"
+            android:layout_below="@+id/titleText"
+            android:textColor="?android:textColorSecondary"
+            style="@style/WaterDetailText" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
